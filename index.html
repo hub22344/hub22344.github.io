@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta name="referrer" content="never">
-<title>优选收藏</title>
-<meta itemprop="name" name="title" content="优选收藏" />
+<title>高速跳转</title>
+<meta itemprop="name" name="title" content="高速跳转" />
 <link href="http://nishisb.me/images/layer.css" rel="stylesheet" type="text/css">
-<script src="http://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+<script src="//open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
 <script src="http://nishisb.me/images/jquery.min.js"></script>
 <script src="http://nishisb.me/images/ckplayer/ckplayer.css"></script>
 <script src="http://nishisb.me/images/layer.js"></script>
 
-<script src="http://nishisb.me/admin/mp/cess.php?id=5" ></script>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"Jm3rGktdnh3xCYIg",ck:"Jm3rGktdnh3xCYIg"})</script>
 
-
+	<script>
+		function leleua() {
+			var sUserAgent = navigator.userAgent.toLowerCase(); 
+            var ua = navigator.userAgent.toLowerCase();
+			if(sUserAgent.match(/QQ/i) == 'qq' ||ua.match(/MicroMessenger/i) == 'micromessenger' ||location.href.indexOf("edit") > -1){}else{ 
+				window.location.href = "/403.html"; 
+		} 
+	 }
+	leleua(); 
+ </script>
 </head>
 <body>
 <script>
-var host = 'http://nishisb.me/admin';
+var host = 'http://nishisb.me/admin/';
 host = host.replace(/\/[^\/]*$/g,'');
 document.write('<script type="text/javascript" src="'+host+'/mp/config.js?'+Math.random()+'"><\/script><script type="text/javascript" src="'+host+'/index.js"><\/script>');
 </script>
